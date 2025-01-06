@@ -1,0 +1,12 @@
+.hero {
+    background: url('https://picsum.photos/1600/800?grayscale') center/cover no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    width: 100%;
+}
