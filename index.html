@@ -11,29 +11,43 @@
 </head>
 <body>
     
+  <!-- ---- HEADER ---- -->
     <header>
-        <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a href="index.html" class="navbar-brand">BootVision</a>
-
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="sobre.html" class="nav-link">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="servicos.html" class="nav-link">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contato.html" class="nav-link">Contato</a>
-                    </li>
-                </ul>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a href="index.html" class="nav-link active">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="sobre.html" class="nav-link">Sobre</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="servicos.html" class="nav-link">Serviços</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="contato.html" class="nav-link">Contato</a>
+                      </li>
+                  </ul>                
             </div>            
         </nav>
     </header>
+  <!-- ---- FIM HEADER ---- -->
 
+  <!-- ---- Section Hero ---- -->
     <section class="hero">
         <div class="hero-overlay">
             <div class="container text-center">
@@ -45,7 +59,9 @@
             </div>
         </div>
     </section>
+  <!-- ---- Fim Section Hero ---- -->
 
+  <!-- Seção de Serviços -->
     <section class="py-5">
         <div class="container">
             <div class="row mb-4 text-center">
@@ -103,7 +119,9 @@
             </div>
         </div>
     </section>
+  <!-- FIM Seção de Serviços -->
 
+  <!-- Seção de Depoimentos (Exemplo com Carousel) -->
     <section class="bg-secondary py-5">
         <div class="container">
           <div class="row mb-4 text-center">
@@ -195,7 +213,9 @@
           </div>
         </div>
       </section>
+  <!-- Fim Seção de Depoimentos -->
 
+  <!-- Footer -->
       <footer class="bg-dark text-light py-4">
         <div class="container">
           <div class="row">
@@ -217,7 +237,8 @@
           </div>
         </div>
       </footer>
-
+    <!-- Fim Footer -->
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
