@@ -1,0 +1,12 @@
+.hero-servicos {
+    background: url('https://picsum.photos/1600/500?blur') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+  }
