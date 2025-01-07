@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/servicos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+</head>
+<body>
+    
+<!-- ---- HEADER ---- -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <a href="index.html" class="navbar-brand">BootVision</a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="servicos.html" class="nav-link active">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </li>
+            </ul>                
+        </div>            
+    </nav>
+  </header>
+<!-- ---- FIM HEADER ---- -->
+
+    <section class="hero-servicos">
+        <div class="hero-overlay d-flex align-items-center">
+          <div class="container text-center">
+            <h1 class="fw-bold">Nossos Serviços</h1>
+            <p class="lead">
+              Soluções sob medida para fazer o seu negócio decolar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+  <!-- Seção Tabs (Serviços em destaque) -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-4">O que Oferecemos</h2>
+          <!-- Nav Tabs -->
+          <ul class="nav nav-tabs justify-content-center mb-3" id="servicosTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="desenvolvimento-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#desenvolvimento-pane"
+                type="button"
+                role="tab"
+                aria-controls="desenvolvimento-pane"
+                aria-selected="true"
+              >
+                Desenvolvimento Web
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="marketing-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#marketing-pane"
+                type="button"
+                role="tab"
+                aria-controls="marketing-pane"
+                aria-selected="false"
+              >
+                Marketing Digital
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="consultoria-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#consultoria-pane"
+                type="button"
+                role="tab"
+                aria-controls="consultoria-pane"
+                aria-selected="false"
+              >
+                Consultoria
+              </button>
+            </li>
+          </ul>
+    
+          <!-- Conteúdo das Tabs -->
+          <div class="tab-content" id="servicosTabsContent">
+            <!-- Tab 1: Desenvolvimento Web -->
+            <div
+              class="tab-pane fade show active"
+              id="desenvolvimento-pane"
+              role="tabpanel"
+              aria-labelledby="desenvolvimento-tab"
+              tabindex="0"
+            >
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="fw-semibold mt-3">Desenvolvimento Web</h3>
+                  <p>
+                    Criamos sites modernos, responsivos e fáceis de gerenciar, que
+                    refletem a identidade e as necessidades do seu negócio.
+                  </p>
+                  <ul>
+                    <li>Desenvolvimento front-end e back-end</li>
+                    <li>Aplicações personalizadas (portais, e-commerces, etc.)</li>
+                    <li>Integrações com APIs e plataformas de terceiros</li>
+                  </ul>
+                </div>                
+              </div>
+            </div>
+            <!-- Tab 2: Marketing Digital -->
+            <div
+              class="tab-pane fade"
+              id="marketing-pane"
+              role="tabpanel"
+              aria-labelledby="marketing-tab"
+              tabindex="0"
+            >
+              <h3 class="fw-semibold mt-3">Marketing Digital</h3>
+              <p>
+                Nossa equipe de especialistas em marketing digital vai ajudar você a
+                aumentar o alcance da sua marca e conquistar mais clientes.
+              </p>
+              <ul>
+                <li>Gestão de redes sociais</li>
+                <li>Campanhas de anúncios online</li>
+                <li>SEO e geração de conteúdo</li>
+              </ul>
+            </div>
+            <!-- Tab 3: Consultoria -->
+            <div
+              class="tab-pane fade"
+              id="consultoria-pane"
+              role="tabpanel"
+              aria-labelledby="consultoria-tab"
+              tabindex="0"
+            >
+              <h3 class="fw-semibold mt-3">Consultoria</h3>
+              <p>
+                Oferecemos uma análise detalhada do seu negócio e propomos
+                soluções que agregam valor e resultados mensuráveis.
+              </p>
+              <ul>
+                <li>Planejamento estratégico</li>
+                <li>Estruturação de processos e equipes</li>
+                <li>Identificação de oportunidades de mercado</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Seção Planos (Tabela) -->
+      <section class="bg-light py-5">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-4">Planos e Preços</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center align-middle">
+              <thead class="table-dark">
+                <tr>
+                  <th>Plano</th>
+                  <th>Recursos</th>
+                  <th>Preço Mensal</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Básico</td>
+                  <td>Suporte simples, Site Institucional, 1 conta de e-mail</td>
+                  <td>R$ 100,00</td>
+                  <td>
+                    <button
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Contratar
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Profissional</td>
+                  <td>Suporte intermediário, Site + Blog, 5 contas de e-mail</td>
+                  <td>R$ 250,00</td>
+                  <td>
+                    <button
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Contratar
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Premium</td>
+                  <td>Suporte avançado, E-commerce, Contas de e-mail ilimitadas</td>
+                  <td>R$ 500,00</td>
+                  <td>
+                    <button
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Contratar
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    <!-- Seção FAQ (Accordion) -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-4">Dúvidas Frequentes</h2>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Quanto tempo leva para desenvolver um site?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="faqOne"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  O prazo pode variar de acordo com a complexidade do projeto, mas
+                  normalmente entregamos um site institucional em até 30 dias úteis.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Quais formas de pagamento são aceitas?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqTwo"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Aceitamos boleto bancário, transferência/PIX e cartão de crédito,
+                  podendo parcelar os planos anuais.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Posso migrar de um plano para outro?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqThree"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Sim! Você pode fazer a migração a qualquer momento, pagando apenas
+                  a diferença de valores proporcional ao período restante.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- Modal -->
+      <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+    >
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contratar Plano</h5>
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+            ></button>
+            </div>
+            <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required />
+                </div>
+                <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required />
+                </div>
+                <div class="mb-3">
+                <label for="plano" class="form-label">Plano</label>
+                <select class="form-select" id="plano">
+                    <option>Básico</option>
+                    <option>Profissional</option>
+                    <option>Premium</option>
+                </select>
+                </div>
+                <!-- Spinner (simulação de processamento) -->
+                <div class="d-none" id="spinnerPagamento">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Processando...</span>
+                </div>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+            >
+                Fechar
+            </button>
+            <button
+                type="button"
+                class="btn btn-primary"
+                onclick="simularPagamento()"
+            >
+                Enviar
+            </button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>MinhaEmpresa</h5>
+              <p class="mb-0">Todos os direitos reservados &copy; 2025</p>
+            </div>
+            <div class="col-md-6 text-md-end mt-3 mt-md-0">
+              <a href="#" class="text-light me-3">
+                <i class="bi bi-facebook"></i> Facebook
+              </a>
+              <a href="#" class="text-light me-3">
+                <i class="bi bi-instagram"></i> Instagram
+              </a>
+              <a href="#" class="text-light">
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
