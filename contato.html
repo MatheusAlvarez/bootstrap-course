@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/contato.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">BootVision</a>
+                
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicos.html" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link active">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </nav>
+    </header>
+
+    <section class="hero-contato">
+        <div class="hero-overlay d-flex align-items-center">
+          <div class="container text-center">
+            <h1 class="fw-bold">Entre em Contato</h1>
+            <p class="lead">Fale conosco e tire suas dúvidas</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+            <!-- Coluna Formulário -->
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">Envie sua Mensagem</h2>
+                <!-- Alerta de sucesso ou erro (inicia oculto) -->
+                <div id="alertFeedback" class="alert d-none" role="alert"></div>
+
+                <form id="contactForm">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="nome"
+                    placeholder="Ex: João da Silva"
+                    required
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="exemplo@dominio.com"
+                    required
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea
+                    class="form-control"
+                    id="mensagem"
+                    rows="5"
+                    placeholder="Digite sua mensagem..."
+                    required
+                    ></textarea>
+                </div>
+                <!-- Barra de Progresso (para simular preenchimento ou envio) -->
+                <div class="mb-3">
+                    <label class="form-label">Progresso do Formulário</label>
+                    <div class="progress">
+                    <div
+                        id="formProgressBar"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                    >
+                        0%
+                    </div>
+                    </div>
+                </div>
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="enviarFormulario()"
+                >
+                    <i class="bi bi-send-fill"></i> Enviar
+                </button>
+                </form>
+            </div>
+
+            <!-- Coluna Informações de Contato -->
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">Informações</h2>
+                <p class="text-muted">
+                Nossa equipe está pronta para atender você. Fique à vontade para
+                visitar nossa sede ou enviar uma mensagem pelas redes sociais.
+                </p>
+                <div class="mb-3 d-flex align-items-center">
+                <i class="bi bi-telephone-fill icon-box me-2"></i>
+                <span>(11) 99999-9999</span>
+                </div>
+                <div class="mb-3 d-flex align-items-center">
+                <i class="bi bi-envelope-fill icon-box me-2"></i>
+                <span>contato@minhaempresa.com</span>
+                </div>
+                <div class="mb-3 d-flex align-items-center">
+                <i class="bi bi-geo-alt-fill icon-box me-2"></i>
+                <span>Av. Principal, 123 - São Paulo, SP</span>
+                </div>
+                <!-- Exemplo de Imagem/Mapa (simples) -->
+                <div class="mt-4">
+                <img
+                    src="https://picsum.photos/600/300"
+                    class="img-fluid rounded shadow-sm"
+                    alt="Mapa Localização"
+                />
+                </div>
+                <div class="mt-3">
+                <button
+                    class="btn btn-outline-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#mapaModal"
+                >
+                    <i class="bi bi-map-fill"></i> Ver Mapa Ampliado
+                </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal (Exemplo de Mapa) -->
+  <div
+  class="modal fade"
+  id="mapaModal"
+  tabindex="-1"
+  aria-labelledby="mapaModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mapaModalLabel">Mapa de Localização</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <!-- Poderia ser um iframe do Google Maps real -->
+        <img
+          src="https://picsum.photos/1200/600"
+          alt="Mapa"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim Modal Mapa -->
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>MinhaEmpresa</h5>
+          <p class="mb-0">Todos os direitos reservados &copy; 2025</p>
+        </div>
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+          <a href="#" class="text-light me-3">
+            <i class="bi bi-facebook"></i> Facebook
+          </a>
+          <a href="#" class="text-light me-3">
+            <i class="bi bi-instagram"></i> Instagram
+          </a>
+          <a href="#" class="text-light">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
